@@ -38,7 +38,7 @@ public class ClientHandler implements Runnable{
             if ("/myweb/regUser".equals(path)){
                 //处理注册业务
                 RegServlet servlet = new RegServlet();
-                servlet.service();
+                servlet.service(request,response);
             }else {
                 File file = new File("./webapps" + path);
                 //若该资源存在并且是一个文件，则正常响应
