@@ -35,7 +35,7 @@ public class ClientHandler implements Runnable{
             String path = request.getRequestURI();
 
             //首先判断本次请求是否为请求某个业务
-            if ("/myweb/regUser".equals(path)){
+            if ("/reg.html".equals(path)){
                 //处理注册业务
                 RegServlet servlet = new RegServlet();
                 servlet.service(request,response);
